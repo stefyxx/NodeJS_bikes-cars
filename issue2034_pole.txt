@@ -1,0 +1,17 @@
+Data source : https://data.mobility.brussels/bike/api/counts/
+
+Sample usage by a different third-party : https://johndoe.be/lab/bbc/
+
+Objective & Steps are described in the code of the module :
+
+  // Objective : Ingesting bike pole stats into our Database
+  //
+  // Proposed steps :
+  // 1. Having all bike pole stats in a nice formatted array of objects at the end of this function
+  // 2. Study the existing Schema. Do we have a schema that fits Bike Pole data?
+  // 2.a If yes, parse the data into the schema
+  // 2.b If no, create a new schema
+  // 3. This is a bare-bone module. We should migrate to a proper Connector so we can inject the data into our database
+  // 4. What should be the run frequnency of the module?
+  //    How often should we ingest the data?
+  //     What happen during subsequent runs, when we already have some data in the DB?
